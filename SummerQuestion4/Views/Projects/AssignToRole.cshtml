@@ -1,0 +1,8 @@
+﻿<h2>Assign To Role</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("user", "User")
+    @Html.DropDownList("role", "Role")
+    <input type="submit" value="Add" />
+}

@@ -1,0 +1,15 @@
+﻿@model SummerQuestion4.Models.ProjectTask
+
+<h2>Update Completion</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.Id)
+    <div>@Html.TextBox("percentageCompleted", "Completion Percentage")</div>
+    <div>@Html.CheckBox("completed", "Completed")</div>
+    <input type="submit" value="Submit" />
+}
+
+<div>
+    @Html.ActionLink("Show Tasks", "ShowMyTasks")
+</div>

@@ -1,0 +1,9 @@
+﻿<h2>Assign Task</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("taskId", "Task")
+    @Html.DropDownList("developerId", "Developer")
+    <input type="submit" value="Add To Task" />
+}
+
